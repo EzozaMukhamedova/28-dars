@@ -1,0 +1,16 @@
+@font-face {
+  font-family: Nunito-ExtraBold;
+  src: url(../../assets/fonts/Nunito-ExtraBold.otf);
+}
+
+@font-face {
+  font-family: Quicksand-Medium;
+  src: url(../../assets/fonts/Quicksand-Medium.otf);
+}
+
+p, span, h3, a {
+  font-family: Quicksand-Medium;
+}
+h1 {
+  font-family: Nunito-ExtraBold;
+}

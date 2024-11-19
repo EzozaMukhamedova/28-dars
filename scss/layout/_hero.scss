@@ -1,0 +1,94 @@
+.hero {
+  &__btn {
+    display: inline-block;
+  }
+  &__mobile-br {
+    display: none;
+  }
+  &__wrapper {
+    text-align: center;
+    padding: 68px 0 79px 0;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: url(../../assets/icons/ellipse-red.svg);
+      top: 165px;
+      right: -84px;
+    }
+
+    &::after {
+      position: absolute;
+      content: url(../../assets/icons/ellipse-blue.svg);
+      top: 311px;
+      left: 0;
+    }
+
+    h1 {
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 87.3px;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      color: #4646466f;
+
+      padding: 24px 0 32px 0;
+    }
+  }
+}
+
+@include mobile() {
+  .container {
+    width: 100%;
+    position: relative;
+  }
+  .hero {
+    &__mobile-br {
+      display: inline;
+    }
+    &__btn {
+      padding: 10px 35px;
+      background-color: #377dff;
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 18px;
+      transition: all 0.3s ease-in-out;
+    }
+    &__wrapper {
+      text-align: center;
+      padding: 69px 0 50px 0;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: url(../../assets/icons/hero-ellipse-red.svg);
+        top: 165px;
+        right: 0px;
+      }
+
+      &::after {
+        position: absolute;
+        content: url(../../assets/icons/hero-ellipse-blue.svg);
+        top: 311px;
+        left: 0;
+      }
+
+      h1 {
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 38.19px;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #4646466f;
+        padding: 20px 0;
+      }
+    }
+  }
+}
